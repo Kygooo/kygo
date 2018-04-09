@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-base-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-base-platform/common-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-base-platform/common-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-base-platform/http-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/controller-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/controller-platform/api-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/controller-platform/job-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-cache-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-cache-platform/mongo-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-cache-platform/redis-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-dao-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-dao-platform/dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-dao-platform/mapper-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/db-dao-platform/mybatis-dao-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-platform/service-impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-platform/service-interface" charset="UTF-8" />
+  </component>
+</project>

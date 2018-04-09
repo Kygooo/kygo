@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/controller-platform/api-controller/api-controller.iml" filepath="$PROJECT_DIR$/controller-platform/api-controller/api-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-base-platform/common-base/common-base.iml" filepath="$PROJECT_DIR$/common-base-platform/common-base/common-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-base-platform/common-base-platform.iml" filepath="$PROJECT_DIR$/common-base-platform/common-base-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-base-platform/common-utils/common-utils.iml" filepath="$PROJECT_DIR$/common-base-platform/common-utils/common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controller-platform/controller-platform.iml" filepath="$PROJECT_DIR$/controller-platform/controller-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-dao-platform/dao/dao.iml" filepath="$PROJECT_DIR$/db-dao-platform/dao/dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-cache-platform/db-cache-platform.iml" filepath="$PROJECT_DIR$/db-cache-platform/db-cache-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-dao-platform/db-dao-platform.iml" filepath="$PROJECT_DIR$/db-dao-platform/db-dao-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-base-platform/http-utils/http-utils.iml" filepath="$PROJECT_DIR$/common-base-platform/http-utils/http-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/controller-platform/job-controller/job-controller.iml" filepath="$PROJECT_DIR$/controller-platform/job-controller/job-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kygo.iml" filepath="$PROJECT_DIR$/kygo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-dao-platform/mapper-generator/mapper-generator.iml" filepath="$PROJECT_DIR$/db-dao-platform/mapper-generator/mapper-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-cache-platform/mongo-manager/mongo-manager.iml" filepath="$PROJECT_DIR$/db-cache-platform/mongo-manager/mongo-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-dao-platform/mybatis-dao-base/mybatis-dao-base.iml" filepath="$PROJECT_DIR$/db-dao-platform/mybatis-dao-base/mybatis-dao-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db-cache-platform/redis-manager/redis-manager.iml" filepath="$PROJECT_DIR$/db-cache-platform/redis-manager/redis-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-platform/service-impl/service-impl.iml" filepath="$PROJECT_DIR$/service-platform/service-impl/service-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-platform/service-interface/service-interface.iml" filepath="$PROJECT_DIR$/service-platform/service-interface/service-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-platform/service-platform.iml" filepath="$PROJECT_DIR$/service-platform/service-platform.iml" />
+    </modules>
+  </component>
+</project>

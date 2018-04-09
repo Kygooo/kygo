@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-controller" />
+        <module name="common-base" />
+        <module name="common-utils" />
+        <module name="dao" />
+        <module name="http-utils" />
+        <module name="job-controller" />
+        <module name="mapper-generator" />
+        <module name="mongo-manager" />
+        <module name="mybatis-dao-base" />
+        <module name="redis-manager" />
+        <module name="service-impl" />
+        <module name="service-interface" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-controller" target="1.8" />
+      <module name="common-base" target="1.8" />
+      <module name="common-base-platform" target="1.8" />
+      <module name="common-utils" target="1.8" />
+      <module name="controller-platform" target="1.8" />
+      <module name="dao" target="1.8" />
+      <module name="db-cache-platform" target="1.8" />
+      <module name="db-dao-platform" target="1.8" />
+      <module name="http-utils" target="1.8" />
+      <module name="job-controller" target="1.8" />
+      <module name="kygo" target="1.8" />
+      <module name="mapper-generator" target="1.8" />
+      <module name="mongo-manager" target="1.8" />
+      <module name="mybatis-dao-base" target="1.8" />
+      <module name="redis-manager" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="service-impl" target="1.8" />
+      <module name="service-interface" target="1.8" />
+      <module name="service-platform" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

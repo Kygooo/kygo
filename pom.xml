@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.kygo</groupId>
+    <artifactId>kygo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>common-base-platform</module>
+        <module>db-dao-platform</module>
+        <module>service-platform</module>
+        <module>db-cache-platform</module>
+        <module>controller-platform</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>kygo</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.12</junit.version>
+        <springboot.version>1.5.7.RELEASE</springboot.version>
+        <io.springfox.version>2.7.0</io.springfox.version>
+        <jackson.version>2.8.9</jackson.version>
+
+        <!--mybatis相关-->
+        <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
+        <mybatisplus.version>2.1.4</mybatisplus.version>
+        <HikariCP.version>2.7.2</HikariCP.version>
+        <mysql.connector.version>5.1.42</mysql.connector.version>
+
+        <!--使用自定义模块的版本(命名规则 artifactId.version)-->
+        <common-base.version>0.0.1-SNAPSHOT</common-base.version>
+        <common-utils.version>0.0.1-SNAPSHOT</common-utils.version>
+        <http-utils.version>0.0.1-SNAPSHOT</http-utils.version>
+        <redis-manager.version>0.0.1-SNAPSHOT</redis-manager.version>
+
+        <mybatis-dao-base.version>0.0.1-SNAPSHOT</mybatis-dao-base.version>
+        <dao.version>0.0.1-SNAPSHOT</dao.version>
+
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.7.RELEASE</version>
+    </parent>
+
+    <!--本模块不会加载，子模块继承使用，子模块中可以只配置groupId和artifactId即可-->
+    <dependencyManagement>
+        <dependencies>
+            <!-- JUnit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!-- spring-cloud配置 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-netflix</artifactId>
+                <version>1.3.5.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

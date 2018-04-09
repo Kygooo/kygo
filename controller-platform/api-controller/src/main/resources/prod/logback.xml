@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<contextName>app-api</contextName>
+	<property name="logback.logs.path" value="/data/tomcat/log/api-app" />
+	<property name="logback.project.name" value="api-app" />
+	<timestamp key="byDay" datePattern="yyyyMMdd" />
+	<!-- consoleAppender -->
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender" target="System.error">
+		<encoder charset="UTF-8" class="com.kygo.api.logback.PatternLayoutEncoder">
+			<pattern>%n[%level]-%date-%logger#%line -- %request%job -> %msg</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="fileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logback.logs.path}/${logback.project.name}.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${logback.logs.path}/${logback.project.name}_%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+			<MaxHistory>60</MaxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>100MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder charset="UTF-8" class="com.kygo.api.logback.PatternLayoutEncoder">
+			<pattern>%n[%level]-%date-%logger#%line -- %request%job -> %msg</pattern>
+		</encoder>
+	</appender>
+	<logger name="org.mybatis.spring.SqlSessionUtils" level="INFO" />
+	<logger name="org.springframework" level="INFO" />
+	<logger name="org.apache.http" level="INFO" />
+	<logger name="springfox.documentation.spring" level="INFO"/>
+	<root level="DEBUG">
+		<!-- <appender-ref ref="console" /> -->
+		<appender-ref ref="fileAppender" />
+	</root>
+</configuration>
